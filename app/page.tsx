@@ -214,7 +214,7 @@ export default function HomePage() {
       </section>
 
       {/* Digital Services */}
-      <section className="h-auto py-16 bg-[url(/pics/digiglobe.jpg)] bg-cover bg-no-repeat">
+      <section id="services" className="h-auto py-16 bg-[url(/pics/digiglobe.jpg)] bg-cover bg-no-repeat">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 py-4 bg-slate-900/70 max-w-3xl mx-4 lg:mx-auto rounded-2xl bg px-2">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Digital Systems Solutions</h2>

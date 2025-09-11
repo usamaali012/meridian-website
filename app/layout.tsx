@@ -4,7 +4,20 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
+import {Manrope,  Kanit} from "next/font/google"
 import "./globals.css"
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+})
+
+const kanit = Kanit({
+  subsets: ["latin"],
+  variable: "--font-kanit",
+  weight:"400",
+})
+
 
 export const metadata: Metadata = {
   title: "Meridian Enterprise - Digital Systems & Financial Consultancy",
@@ -24,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+      <body className={`${manrope.variable} ${kanit.variable}`}>
         <Suspense fallback={null}>
           {children}
           <Analytics />
