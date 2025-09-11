@@ -96,14 +96,14 @@ export default function HomePage() {
       title: "Financial Planning & Analysis",
       description:
         "Strategic financial planning services including budgeting, forecasting, and financial modeling to help your business achieve sustainable growth.",
-      features: ["Budget Planning", "Financial Forecasting", "Risk Assessment", "Performance Analysis"],
+      features: ["Budget Planning", "Financial Forecasting", "Performance Analysis"],
     },
     {
       icon: TrendingUp,
       title: "Investment Advisory",
       description:
         "Expert investment guidance and portfolio management services to maximize returns while managing risk according to your business objectives.",
-      features: ["Portfolio Management", "Risk Analysis", "Market Research", "Investment Strategy"],
+      features: ["Risk Analysis", "Market Research", "Investment Strategy"],
     },
   ]
 
@@ -235,7 +235,6 @@ export default function HomePage() {
                   <div className="absolute inset-0 bg-gradient-to-r from-[#0A509E]/10 to-[#0396C7]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
 
                   <div className="relative z-10">
-                    {/* ✅ Icon + Title in the same row */}
                     <div className="flex items-center gap-3 mb-2 md:mb-4">
                       <div className="w-9 lg:w-13 h-9 lg:h-13 bg-gradient-to-r from-[#0A509E] to-[#0396C7] rounded-xl flex items-center justify-center group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white transition-all duration-300">
                         <IconComponent className="w-5 lg:w-7 h-5 lg:h-7 text-white group-hover:text-[#0A509E] transition-colors duration-300" />
@@ -287,11 +286,11 @@ export default function HomePage() {
 
                   <div className="relative z-10">
                     <div className="flex items-center gap-3 mb-6">
-                      <div className="w-9 lg:w-13 h-9 lg:h-13 bg-gradient-to-r from-[#0A509E] to-[#0396C7] rounded-xl flex items-center justify-center group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white transition-all duration-300">
+                      <div className="w-10 lg:w-13 h-10 px-2 lg:h-13 bg-gradient-to-r from-[#0A509E] to-[#0396C7] rounded-xl flex items-center justify-center group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white transition-all duration-300">
                         <IconComponent className="w-5 lg:w-7 h-5 lg:h-7 text-white group-hover:text-[#0A509E] transition-colors duration-300" />
                       </div>
 
-                      <h3 className="text-2xl font-bold text-gray-900 group-hover:text-[#0A509E] transition-colors duration-300">
+                      <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#0A509E] transition-colors duration-300">
                         {service.title}
                       </h3>
                     </div>

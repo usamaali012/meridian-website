@@ -13,7 +13,7 @@ export default function Navigation() {
     { href: "/", label: "HOME" },
     { href: "/#services", label: "SERVICES" },
     { href: "/about", label: "ABOUT" },
-    { href: "/contact", label: "CONTACT" },
+    { href: "/contact", label: "CONTACT US" },
     { href: "/privacy-policy", label: "PRIVACY POLICY" },
 
   ]
@@ -24,7 +24,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-18 mx-24">
 
           <div>
-            <img src="/pics/meridian-logo.png" alt="Meridian Logo" className="w-[60%]" />
+            <img src="/pics/meridian-logo.png" alt="Meridian Logo" className="w-full lg:w-[60%]" />
           </div>
           
           {/* Desktop Navigation */}

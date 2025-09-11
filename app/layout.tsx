@@ -20,7 +20,7 @@ const kanit = Kanit({
 
 
 export const metadata: Metadata = {
-  title: "Meridian Enterprise - Digital Systems & Financial Consultancy",
+  title: "Meridian Enterprises",
   icons: {
     icon: "/favicon.png",
   },
