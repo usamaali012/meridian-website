@@ -60,18 +60,18 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <div>
                   <p className="text-gray-500 text-sm mb-1">Email:</p>
-                  <p className="text-xl font-semibold text-gray-900">info@meridianent.net</p>
+                  <p className="text-lg lg:text-xl font-semibold text-gray-900">info@meridianent.net</p>
                 </div>
 
                 <div>
                   <p className="text-gray-500 text-sm mb-1">Phone:</p>
-                  <p className="text-xl font-semibold text-gray-900">051-2743288</p>
+                  <p className="text-lg lg:text-xl font-semibold text-gray-900">051-2743288</p>
                 </div>
 
                 <div>
                   <p className="text-gray-500 text-sm mb-1">Office:</p>
-                  <p className="text-xl font-semibold text-gray-900">
-                    Flat No. 2, 3rd Floor Khyber 3 Apartments
+                  <p className="text-lg lg:text-xl font-semibold text-gray-900">
+                    Flat No. 2, 3rd Floor, Khyber-3 Apts,
                     <br />
                     G-15 Markaz Islamabad
                   </p>

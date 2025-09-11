@@ -65,28 +65,28 @@ export default function HomePage() {
       title: "Security & Surveillance Systems",
       description:
         "Comprehensive security solutions including CCTV systems, access control, alarm systems, and 24/7 monitoring services to protect your business assets.",
-      features: ["HD Camera Systems", "Remote Monitoring", "Access Control", "Alarm Integration"],
+      features: ["HD Camera Systems", "Remote Monitoring", "Alarm Integration"],
     },
     {
       icon: Camera,
       title: "Advanced Camera Solutions",
       description:
         "State-of-the-art camera systems with AI-powered analytics, facial recognition, and intelligent motion detection for enhanced security coverage.",
-      features: ["AI Analytics", "Facial Recognition", "Night Vision", "Cloud Storage"],
+      features: ["Facial Recognition", "Night Vision", "Cloud Storage"],
     },
     {
       icon: Network,
       title: "Network Infrastructure",
       description:
         "Design, installation, and maintenance of robust network systems including LAN/WAN setup, wireless networks, and enterprise-grade connectivity solutions.",
-      features: ["LAN/WAN Setup", "Wireless Networks", "Network Security", "Performance Optimization"],
+      features: ["LAN/WAN Setup", "Network Security", "Performance Optimization"],
     },
     {
       icon: Phone,
       title: "Telephone Exchange Systems",
       description:
         "Modern PBX systems, VoIP solutions, and unified communications platforms to streamline your business communications and reduce costs.",
-      features: ["VoIP Solutions", "PBX Systems", "Unified Communications", "Call Analytics"],
+      features: ["PBX Systems", "Unified Communications", "Call Analytics"],
     },
   ]
 
@@ -214,38 +214,41 @@ export default function HomePage() {
       </section>
 
       {/* Digital Services */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="h-auto py-16 bg-[url(/pics/digiglobe.jpg)] bg-cover bg-no-repeat">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Digital Systems Solutions</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <div className="text-center mb-10 py-4 bg-slate-900/70 max-w-3xl mx-4 lg:mx-auto rounded-2xl bg px-2">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Digital Systems Solutions</h2>
+            <p className="text-lg text-gray-100 max-w-2xl mx-auto">
               Cutting-edge technology solutions to secure, connect, and optimize your business operations
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-[80%] mx-auto">
             {digitalServices.map((service, index) => {
               const IconComponent = service.icon
               return (
                 <Card
                   key={index}
-                  className="group relative overflow-hidden bg-white/70 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/80 rounded-2xl p-8"
+                  className="group relative overflow-hidden bg-white/70 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/80 rounded-2xl p-6"
                 >
                   {/* Hover Glow Effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-[#0A509E]/10 to-[#0396C7]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
 
                   <div className="relative z-10">
-                    <div className="w-16 h-16 bg-gradient-to-r from-[#0A509E] to-[#0396C7] rounded-xl flex items-center justify-center mb-6 group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white transition-all duration-300">
-                      <IconComponent className="w-8 h-8 text-white group-hover:text-[#0A509E] transition-colors duration-300" />
-                    </div>
+                    {/* ✅ Icon + Title in the same row */}
+                    <div className="flex items-center gap-3 mb-2 md:mb-4">
+                      <div className="w-9 lg:w-13 h-9 lg:h-13 bg-gradient-to-r from-[#0A509E] to-[#0396C7] rounded-xl flex items-center justify-center group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white transition-all duration-300">
+                        <IconComponent className="w-5 lg:w-7 h-5 lg:h-7 text-white group-hover:text-[#0A509E] transition-colors duration-300" />
+                      </div>
 
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#0A509E] transition-colors duration-300">
-                      {service.title}
-                    </h3>
+                      <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#0A509E] transition-colors duration-300">
+                        {service.title}
+                      </h3>
+                    </div>
 
                     <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
 
-                    <div className="space-y-2">
+                    <div className="space-y-1 md:space-y-2">
                       {service.features.map((feature, featureIndex) => (
                         <div key={featureIndex} className="flex items-center space-x-2">
                           <CheckCircle className="w-4 h-4 text-[#0396C7]" />
@@ -271,7 +274,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-[80%] mx-auto">
             {financialServices.map((service, index) => {
               const IconComponent = service.icon
               return (
@@ -283,8 +286,8 @@ export default function HomePage() {
                   <div className="absolute inset-0 bg-gradient-to-r from-[#0A509E]/10 to-[#0396C7]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
 
                   <div className="relative z-10">
-                    <div className="w-16 h-16 bg-gradient-to-r from-[#0A509E] to-[#0396C7] rounded-xl flex items-center justify-center mb-6 group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white transition-all duration-300">
-                      <IconComponent className="w-8 h-8 text-white group-hover:text-[#0A509E] transition-colors duration-300" />
+                    <div className="w-9 lg:w-13 h-9 lg:h-13 bg-gradient-to-r from-[#0A509E] to-[#0396C7] rounded-xl flex items-center justify-center mb-6 group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white transition-all duration-300">
+                      <IconComponent className="w-5 lg:w-7 h-5 lg:h-7 text-white group-hover:text-[#0A509E] transition-colors duration-300" />
                     </div>
 
                     <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#0A509E] transition-colors duration-300">
