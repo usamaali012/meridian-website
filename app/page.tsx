@@ -265,11 +265,11 @@ export default function HomePage() {
       </section>
 
       {/* Business Services */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-50 to-blue-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[url(/pics/invest.jpg)] bg-fit bg-no-repeat">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Financial Consultancy Services</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Financial Consultancy Services</h2>
+            <p className="text-lg text-gray-100 max-w-2xl mx-auto">
               Expert financial guidance and strategic consulting to drive sustainable business growth
             </p>
           </div>
@@ -286,13 +286,15 @@ export default function HomePage() {
                   <div className="absolute inset-0 bg-gradient-to-r from-[#0A509E]/10 to-[#0396C7]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
 
                   <div className="relative z-10">
-                    <div className="w-9 lg:w-13 h-9 lg:h-13 bg-gradient-to-r from-[#0A509E] to-[#0396C7] rounded-xl flex items-center justify-center mb-6 group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white transition-all duration-300">
-                      <IconComponent className="w-5 lg:w-7 h-5 lg:h-7 text-white group-hover:text-[#0A509E] transition-colors duration-300" />
-                    </div>
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-9 lg:w-13 h-9 lg:h-13 bg-gradient-to-r from-[#0A509E] to-[#0396C7] rounded-xl flex items-center justify-center group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white transition-all duration-300">
+                        <IconComponent className="w-5 lg:w-7 h-5 lg:h-7 text-white group-hover:text-[#0A509E] transition-colors duration-300" />
+                      </div>
 
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#0A509E] transition-colors duration-300">
-                      {service.title}
-                    </h3>
+                      <h3 className="text-2xl font-bold text-gray-900 group-hover:text-[#0A509E] transition-colors duration-300">
+                        {service.title}
+                      </h3>
+                    </div>
 
                     <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
 
