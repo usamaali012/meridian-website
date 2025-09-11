@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X,ArrowRight, User} from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
@@ -11,21 +11,24 @@ export default function Navigation() {
 
   const navLinks = [
     { href: "/", label: "HOME" },
+    { href: "/#services", label: "SERVICES" },
     { href: "/about", label: "ABOUT" },
     { href: "/contact", label: "CONTACT" },
+    { href: "/privacy-policy", label: "PRIVACY POLICY" },
+
   ]
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 border border-b-[#0A509E]/80">
-        <div className="flex justify-center items-center h-18">
+        <div className="flex justify-between items-center h-18 mx-24">
 
           <div>
             <img src="/pics/meridian-logo.png" alt="Meridian Logo" className="w-[60%]" />
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-1 mr-20">
             {navLinks.map((link) => {
               const isActive =
                 link.href === "/"
@@ -48,6 +51,16 @@ export default function Navigation() {
             })}
           </div>
 
+          <a
+            href="http://portal.meridianent.net/" target="_blank"  rel="noopener noreferrer" className="hidden lg:block">
+            <div className="w-full bg-[#0A509E] hover:bg-[#0A509E]/50 text-white font-semibold px-6 py-2 rounded-xl text-sm transition-all duration-300 flex items-center justify-center gap-2">
+              <User className="h-6 w-6" />
+              <span className="text-md">User Log-in</span>
+              <ArrowRight className="h-auto w-6" />
+            </div>
+          </a>
+
+
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -60,7 +73,7 @@ export default function Navigation() {
       </div>
 
       {/* Mobile Menu */}
-      <div
+     <div
         className={`lg:hidden transition-all duration-300 ease-in-out ${
           isOpen
             ? "max-h-screen opacity-100 bg-gray-900/95 backdrop-blur-md border-t border-white/10"
@@ -89,6 +102,12 @@ export default function Navigation() {
               </Link>
             )
           })}
+
+          <a href="http://portal.meridianent.net/" target="_blank" rel="noopener noreferrer" className="flex justify-center">
+            <div className="w-[40%] bg-[#0A509E] hover:bg-[#0A509E]/50 text-white font-semibold py-2 rounded-xl text-sm transition-all duration-300 text-center">
+              User Log-in
+            </div>
+          </a>
         </div>
       </div>
     </nav>

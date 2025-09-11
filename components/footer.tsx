@@ -6,12 +6,12 @@ export default function Footer() {
 
   const footerLinks = {
     services: [
-      { label: "Security Systems", href: "/services#security" },
-      { label: "Camera Solutions", href: "/services#cameras" },
-      { label: "Network Infrastructure", href: "/services#network" },
-      { label: "Telephone Systems", href: "/services#telephone" },
-      { label: "Financial Planning", href: "/services#financial" },
-      { label: "Business Consulting", href: "/services#consulting" },
+      { label: "Security Systems", href: "/" },
+      { label: "Camera Solutions", href: "/" },
+      { label: "Network Infrastructure", href: "/" },
+      { label: "Telephone Systems", href: "/" },
+      { label: "Financial Planning", href: "/" },
+      { label: "Business Consulting", href: "/" },
     ],
     company: [
       { label: "About Us", href: "/about" },
@@ -44,36 +44,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 pr-6">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#0A509E] to-[#0396C7] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">M</span>
-              </div>
               <div>
-                <span className="text-xl font-bold">Meridian</span>
-                <span className="text-sm text-gray-400 block leading-none">Enterprise</span>
+                <img src="/pics/meridian-logo.png" alt="logo" className="w-[90%] h-auto" />
               </div>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Empowering businesses with cutting-edge digital systems and expert financial consultancy services for
               sustainable growth and success.
             </p>
-
-            {/* Contact Info */}
-            <div className="space-y-2">
-              <div className="flex items-center space-x-2 text-sm text-gray-400">
-                <MapPin className="w-4 h-4" />
-                <span>Flat No. 2, 3rd Floor Khyber 3 Apartments G-15 Markaz Islamabad</span>
-              </div>
-              <div className="flex items-center space-x-2 text-sm text-gray-400">
-                <Phone className="w-4 h-4" />
-                <span>051-2743288</span>
-              </div>
-              <div className="flex items-center space-x-2 text-sm text-gray-400">
-                <Mail className="w-4 h-4" />
-                <span>info@meridianent.net</span>
-              </div>
-            </div>
           </div>
 
           {/* Services Links */}
