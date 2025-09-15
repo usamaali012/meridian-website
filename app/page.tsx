@@ -128,7 +128,7 @@ export default function HomePage() {
       <section
         className="relative min-h-screen flex items-center justify-start px-4 lg:px-8 pt-16 lg:pt-10"
         style={{
-          backgroundImage: "url('/pics/serverblades.webp')",
+          backgroundImage: "url('/corp1.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",}}>
@@ -160,13 +160,13 @@ export default function HomePage() {
 
             {/* Text content positioned on the left */}
             <h1 className="text-3xl lg:text-5xl font-bold text-center lg:text-left text-white mb-6 leading-normal">
-              Driving Growth  <br /> with <b>Innovation </b> in <br /> {" "}
-              <span className="text-transparent bg-clip-text bg-[#17ebdc] font-bold text-3xl lg:text-6xl transition-all duration-1000">
+              Driving Growth  <br /> with <span className="text-slate-200 font-bold text-6xl">Innovation </span> in <br /> {" "}
+              <span className="text-transparent bg-clip-text bg-slate-200 font-bold text-3xl lg:text-6xl transition-all duration-1000">
                 {animatedTexts[currentText]}
               </span>
             </h1>
 
-            <p className="text-base lg:text-md italic text-justify lg:text-left px-2 lg:px-0 text-gray-100 mb-8 leading-relaxed">
+            <p className="text-base lg:text-lg italic text-justify lg:text-left px-2 lg:px-0 text-gray-100 mb-8 leading-relaxed">
               "Comprehensive digital systems solutions and expert financial consultancy to drive your business forward in
               the modern world"
             </p>
@@ -245,13 +245,13 @@ export default function HomePage() {
                       </h3>
                     </div>
 
-                    <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                    <p className="text-gray-800 mb-6 leading-relaxed">{service.description}</p>
 
                     <div className="space-y-1 md:space-y-2">
                       {service.features.map((feature, featureIndex) => (
                         <div key={featureIndex} className="flex items-center space-x-2">
                           <CheckCircle className="w-4 h-4 text-[#0396C7]" />
-                          <span className="text-sm text-gray-700">{feature}</span>
+                          <span className="text-md text-gray-800 font-semibold">{feature}</span>
                         </div>
                       ))}
                     </div>
@@ -295,13 +295,13 @@ export default function HomePage() {
                       </h3>
                     </div>
 
-                    <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                    <p className="text-gray-800 mb-6 leading-relaxed">{service.description}</p>
 
                     <div className="space-y-2">
                       {service.features.map((feature, featureIndex) => (
                         <div key={featureIndex} className="flex items-center space-x-2">
                           <CheckCircle className="w-4 h-4 text-[#0396C7]" />
-                          <span className="text-sm text-gray-700">{feature}</span>
+                          <span className="text-md text-gray-800 font-semibold">{feature}</span>
                         </div>
                       ))}
                     </div>

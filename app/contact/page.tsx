@@ -7,11 +7,11 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+import { Facebook, Twitter, Linkedin, Instagram, Phone, Mail, MapPin } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
     email: "",
     message: "",
   })
@@ -32,6 +32,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
+
       <div className="relative mt-10 h-96 bg-cover bg-center bg-no-repeat flex items-center" style={{ backgroundImage: "url('/bm-phone.webp')" }}>
         {/* Blue gradient */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A509E] via-[#0A509E]/75 to-[#0396C7]/40"></div>
@@ -48,89 +49,91 @@ export default function ContactPage() {
 
       <div className="px-4 lg:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[600px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[600px] pt-4">
 
             {/* Left Side - Contact Information */}
-            <div className="space-y-8 flex flex-col justify-center">
+            <div className="bg-[#0A509E] p-4 lg:p-12 relative overflow-hidden rounded-lg">
+                {/* Decorative circles */}
+                <div className="absolute bottom-20 right-10 w-32 h-32 bg-white/10 rounded-full"></div>
+                <div className="absolute bottom-32 right-20 w-20 h-20 bg-white/5 rounded-full"></div>
 
-              {/* Main Heading */}
-              <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">Reach Out Today</h1>
+                <div className="relative z-10 h-full flex flex-col">
+                  <div className="mb-8">
+                    <h2 className="text-3xl font-bold text-white mb-3">Contact Information</h2>
+                    <p className="text-white/80">Say something to start a live chat!</p>
+                  </div>
 
-              {/* Contact Details */}
-              <div className="space-y-6">
-                <div>
-                  <p className="text-gray-500 text-sm mb-1">Email:</p>
-                  <p className="text-lg lg:text-xl font-semibold text-gray-900">info@meridianent.net</p>
-                </div>
+                  <div className="space-y-8 flex-1">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-6 h-6 flex items-center justify-center">
+                        <Phone className="w-7 h-7 text-white" />
+                      </div>
+                      <span className="text-white text-lg font-semibold">051-2743288</span>
+                    </div>
 
-                <div>
-                  <p className="text-gray-500 text-sm mb-1">Phone:</p>
-                  <p className="text-lg lg:text-xl font-semibold text-gray-900">051-2743288</p>
-                </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="w-6 h-6 flex items-center justify-center">
+                        <Mail className="w-7 h-7 text-white" />
+                      </div>
+                      <span className="text-white text-lg font-semibold">info@meridianent.net</span>
+                    </div>
 
-                <div>
-                  <p className="text-gray-500 text-sm mb-1">Office:</p>
-                  <p className="text-lg lg:text-xl font-semibold text-gray-900">
-                    Flat No. 2, 3rd Floor, Khyber-3 Apts,
-                    <br />
-                    G-15 Markaz Islamabad
-                  </p>
-                </div>
+                    <div className="flex items-start space-x-4">
+                      <div className="w-6 h-6 flex items-center justify-center mt-1">
+                        <MapPin className="w-8 h-8 text-white" />
+                      </div>
+                      <div className="text-white text-lg font-semibold">
+                        <div>Flat No. 2, 3rd Floor, Khyber-3 Apts,</div>
+                        <div>G-15 Markaz Islamabad</div>
+                      </div>
+                    </div>
+                  </div>
 
-                <div>
-                  <p className="text-gray-500 text-sm mb-4">Follow Us</p>
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 mt-8">
                     <a
                       href="#"
-                      className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center transition-colors duration-200"
+                      className="w-10 h-10 bg-yellow-500 hover:bg-yellow-600 rounded-full flex items-center justify-center transition-colors duration-200"
                     >
-                      <Facebook className="w-5 h-5 text-gray-600" />
+                      <Facebook className="w-5 h-5 text-white" />
                     </a>
                     <a
                       href="#"
-                      className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center transition-colors duration-200"
+                      className="w-10 h-10 bg-yellow-500 hover:bg-yellow-600 rounded-full flex items-center justify-center transition-colors duration-200"
                     >
-                      <Linkedin className="w-5 h-5 text-gray-600" />
+                      <Instagram className="w-5 h-5 text-white" />
                     </a>
                     <a
                       href="#"
-                      className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center transition-colors duration-200"
+                      className="w-10 h-10 bg-yellow-500 hover:bg-yellow-600 rounded-full flex items-center justify-center transition-colors duration-200"
                     >
-                      <Twitter className="w-5 h-5 text-gray-600" />
-                    </a>
-                    <a
-                      href="#"
-                      className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center transition-colors duration-200"
-                    >
-                      <Instagram className="w-5 h-5 text-gray-600" />
+                      <Twitter className="w-5 h-5 text-white" />
                     </a>
                   </div>
                 </div>
-              </div>
             </div>
 
             {/* Right Side - Contact Form */}
-            <div className="bg-white flex flex-col justify-center">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="p-8 lg:p-12 bg-gray-50 rounded-lg">
+                <form onSubmit={handleSubmit} className="space-y-6 h-full flex flex-col justify-center">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-2">
-                      Your Name
+                    <label htmlFor="firstName" className="block text-lg font-medium text-gray-700 mb-2">
+                      First Name
                     </label>
                     <Input
-                      id="name"
-                      name="name"
+                      id="firstName"
+                      name="firstName"
                       type="text"
                       required
-                      value={formData.name}
+                      value={formData.firstName}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                      placeholder="Your name"
+                      className="w-full px-0 py-3 border-0 border-b border-gray-300 rounded-none bg-transparent focus:ring-0 focus:border-gray-500 transition-colors duration-200"
+                      placeholder=""
                     />
                   </div>
+
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
-                      Email address
+                    <label htmlFor="email" className="block text-lg font-medium text-gray-700 mb-2">
+                      Email <span className="text-red-500">*</span>
                     </label>
                     <Input
                       id="email"
@@ -139,36 +142,40 @@ export default function ContactPage() {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                      placeholder="Your email address"
+                      className="w-full px-0 py-3 border-0 border-b border-gray-300 rounded-none bg-transparent focus:ring-0 focus:border-gray-500 transition-colors duration-200"
+                      placeholder=""
                     />
                   </div>
-                </div>
 
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-900 mb-2">
-                    Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={6}
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
-                    placeholder="Write something..."
-                  />
-                </div>
+                  <div>
+                    <label htmlFor="message" className="block text-lg font-medium text-gray-700 mb-2">
+                      Message
+                    </label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows={4}
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      className="w-full px-0 py-4 border-0 border-b border-gray-300 rounded-none bg-transparent focus:ring-0 focus:border-gray-500 transition-colors duration-200 resize-none"
+                      placeholder="Write your message..."
+                    />
+                  </div>
 
-                <Button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 text-base font-medium rounded-lg transition-colors duration-200"
-                >
-                  Submit
-                </Button>
-              </form>
-            </div>
+                  <div className="pt-6">
+                    <Button
+                      type="submit"
+                      className="bg-blue-600 text-white border border-transparent 
+                                px-10 py-5 rounded-lg font-medium transition-colors duration-500 
+                                ml-auto flex justify-center
+                                hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:scale-105"
+                    >
+                      <span className="text-center">Send Message</span>
+                    </Button>
+                  </div>
+                </form>
+              </div>
 
           </div>
         </div>
