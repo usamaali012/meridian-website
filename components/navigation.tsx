@@ -24,11 +24,11 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-18 mx-24">
 
           <div>
-            <img src="/pics/meridian-logo.png" alt="Meridian Logo" className="w-full lg:w-[60%]" />
+            <img src="/pics/meridian-logo.png" alt="Meridian Logo" className="w-[80%] md:w-[60%]" />
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1 mr-20">
+          <div className="hidden lg:flex items-center space-x-1 mr-16">
             {navLinks.map((link) => {
               const isActive =
                 link.href === "/"
@@ -39,7 +39,7 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-6 py-2 rounded-[14px] text-sm font-medium transition-all duration-300 ${
+                  className={`px-6 py-2 rounded-[14px] text-xs font-medium transition-all duration-300 ${
                     isActive
                       ? "bg-[#0A509E] text-white"
                       : "text-[#0A509E] hover:text-[#0396C7]"
@@ -73,42 +73,42 @@ export default function Navigation() {
       </div>
 
       {/* Mobile Menu */}
-     <div
-        className={`lg:hidden transition-all duration-300 ease-in-out ${
-          isOpen
-            ? "max-h-screen opacity-100 bg-gray-900/95 backdrop-blur-md border-t border-white/10"
-            : "max-h-0 opacity-0 overflow-hidden"
-        }`}
-      >
-        <div className="px-4 py-6 space-y-2">
-          {navLinks.map((link) => {
-            const isActive =
-              link.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(link.href)
+      <div
+          className={`lg:hidden transition-all duration-300 ease-in-out text-center ${
+            isOpen
+              ? "max-h-screen opacity-100 bg-gray-900/95 backdrop-blur-md border-t border-white/10"
+              : "max-h-0 opacity-0 overflow-hidden"
+          }`}
+        >
+          <div className="px-4 py-6 space-y-2">
+            {navLinks.map((link) => {
+              const isActive =
+                link.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(link.href)
 
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className={`block px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
-                  isActive
-                    ? "bg-[#0A509E] text-white"
-                    : "text-white hover:text-[#0396C7]"
-                }`}
-              >
-                {link.label}
-              </Link>
-            )
-          })}
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className={`block px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
+                    isActive
+                      ? "bg-[#0A509E] text-white"
+                      : "text-white hover:text-[#0396C7]"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              )
+            })}
 
-          <a href="http://portal.meridianent.net/" target="_blank" rel="noopener noreferrer" className="flex justify-center">
-            <div className="w-[40%] bg-[#0A509E] hover:bg-[#0A509E]/50 text-white font-semibold py-2 rounded-xl text-sm transition-all duration-300 text-center">
-              User Log-in
-            </div>
-          </a>
-        </div>
+            <a href="http://portal.meridianent.net/" target="_blank" rel="noopener noreferrer" className="flex justify-center">
+              <div className="w-[40%] bg-[#0A509E] hover:bg-[#0A509E]/50 text-white font-semibold py-2 rounded-xl text-sm transition-all duration-300 text-center">
+                User Log-in
+              </div>
+            </a>
+          </div>
       </div>
     </nav>
   )

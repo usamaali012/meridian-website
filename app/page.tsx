@@ -24,7 +24,6 @@ export default function HomePage() {
   const [currentText, setCurrentText] = useState(0)
   const animatedTexts = [
     "Digital Systems",
-    "Financial Consultancy",
     "Security Solutions",
     "Network Infrastructure",
   ]
@@ -119,7 +118,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       {/* Ppop Up for Download */}
-      <AutoPopup/>
+      {/* <AutoPopup/> */}
      
       {/* Navigation Component */}
       <Navigation />
@@ -147,7 +146,7 @@ export default function HomePage() {
           <div className="w-full md:max-w-4xl mt-10">
 
             {/*Download button (mobile only) */}
-            <div
+            {/* <div
               onClick={handleDownload}
               className="lg:hidden lg:mt-0 rounded-3xl flex justify-center lg:justify-start mt-4 mb-4 cursor-pointer hover:scale-105 transition-transform"
             >
@@ -156,11 +155,11 @@ export default function HomePage() {
                 alt="Download APK"
                 className="w-76 h-auto object-contain"
               />
-            </div>
+            </div> */}
 
             {/* Text content positioned on the left */}
             <h1 className="text-3xl lg:text-5xl font-bold text-center lg:text-left text-white mb-6 leading-normal">
-              Driving Growth  <br /> with <span className="text-slate-200 font-bold text-6xl">Innovation </span> in <br /> {" "}
+              Driving Growth  <br /> with <span className="text-slate-200 font-bold text-4xl lg:text-6xl">Innovation </span> in <br /> {" "}
               <span className="text-transparent bg-clip-text bg-slate-200 font-bold text-3xl lg:text-6xl transition-all duration-1000">
                 {animatedTexts[currentText]}
               </span>
@@ -172,41 +171,31 @@ export default function HomePage() {
             </p>
 
             {/* Service Icons */}
-            <div className="grid grid-cols-2 gap-4 mb-8 mx-auto lg:mx-0 w-full lg:w-[70%] rounded-2xl bg-slate-800/60 justify-items-center p-6">
+            <div className="grid grid-cols-1 gap-4 mb-8 mx-auto lg:mx-0 w-[70%] lg:w-[35%] rounded-2xl bg-slate-800/60 justify-items-center p-6">
               <div className="flex items-center gap-3 pr-2 lg:pr-6">
-                <div className="w-13 lg:w-14 h-9 lg:h-14 bg-gradient-to-br from-[#0A509E] to-[#0396C7] rounded-full flex items-center justify-center">
+                <div className="w-9 lg:w-14 h-9 lg:h-14 bg-gradient-to-br from-[#0A509E] to-[#0396C7] rounded-full flex items-center justify-center">
                   <ShieldEllipsis className="w-6 lg:w-8 h-6 lg:h-8 text-white" />
                 </div>
                 <span className="text-md lg:text-lg font-medium text-gray-100">Security Systems</span>
               </div>
               <div className="flex items-center gap-3 pr-2 lg:pr-4">
-                <div className="w-13 lg:w-14 h-9 lg:h-14 bg-gradient-to-br from-[#0A509E] to-[#0396C7] rounded-full flex items-center justify-center">
+                <div className="w-9 lg:w-14 h-9 lg:h-14 bg-gradient-to-br from-[#0A509E] to-[#0396C7] rounded-full flex items-center justify-center">
                   <ServerCrash className="w-6 lg:w-8 h-5 lg:h-8 text-white" />
                 </div>
                 <span className="text-md lg:text-lg font-medium text-gray-100">Network Solutions</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-13 lg:w-14 h-9 lg:h-14 bg-gradient-to-br from-[#0A509E] to-[#0396C7] rounded-full flex items-center justify-center">
+                <div className="w-9 lg:w-14 h-9 lg:h-14 bg-gradient-to-br from-[#0A509E] to-[#0396C7] rounded-full flex items-center justify-center">
                   <Phone className="w-6 lg:w-8 h-5 lg:h-8 text-white" />
                 </div>
                 <span className="text-md lg:text-lg font-medium text-gray-100">Telephone Exchange</span>
               </div>
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <div className="w-13 lg:w-14 h-9 lg:h-14 bg-gradient-to-br from-[#0A509E] to-[#0396C7] rounded-full flex items-center justify-center">
                   <Calculator className="w-6 lg:w-8 h-5 lg:h-8 text-white" />
                 </div>
                 <span className="text-md lg:text-lg font-medium text-gray-100">Financial Consulting</span>
-              </div>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="hidden md:block pt-6 border-t border-gray-900">
-              <p className="text-gray-200 text-sm mb-3">Trusted by businesses across industries</p>
-              <div className="flex gap-4">
-                <div className="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-800">Enterprise</div>
-                <div className="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-800">SMB</div>
-                <div className="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-800">Startups</div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -217,8 +206,8 @@ export default function HomePage() {
       <section id="services" className="h-auto py-16 bg-[url(/pics/digiglobe.jpg)] bg-cover bg-no-repeat">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 py-4 bg-slate-900/70 max-w-3xl mx-4 lg:mx-auto rounded-2xl bg px-2">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Digital Systems Solutions</h2>
-            <p className="text-lg text-gray-100 max-w-2xl mx-auto">
+            <h2 className="text-2xl lg:text-3xl  font-bold text-white mb-4">Digital Systems Solutions</h2>
+            <p className="text-base lg:text-lg text-gray-100 max-w-2xl mx-auto">
               Cutting-edge technology solutions to secure, connect, and optimize your business operations
             </p>
           </div>
@@ -264,7 +253,7 @@ export default function HomePage() {
       </section>
 
       {/* Business Services */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[url(/pics/invest.jpg)] bg-fit bg-no-repeat">
+      {/* <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[url(/pics/invest.jpg)] bg-fit bg-no-repeat">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Financial Consultancy Services</h2>
@@ -282,7 +271,7 @@ export default function HomePage() {
                   className="group relative overflow-hidden bg-white/70 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/80 rounded-2xl p-8"
                 >
                   {/* Hover Glow Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#0A509E]/10 to-[#0396C7]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                  {/* <div className="absolute inset-0 bg-gradient-to-r from-[#0A509E]/10 to-[#0396C7]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
 
                   <div className="relative z-10">
                     <div className="flex items-center gap-3 mb-6">
@@ -311,7 +300,7 @@ export default function HomePage() {
             })}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
