@@ -118,7 +118,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       {/* Ppop Up for Download */}
-      {/* <AutoPopup/> */}
+      <AutoPopup/>
      
       {/* Navigation Component */}
       <Navigation />
@@ -146,7 +146,7 @@ export default function HomePage() {
           <div className="w-full md:max-w-4xl mt-10">
 
             {/*Download button (mobile only) */}
-            {/* <div
+            <div
               onClick={handleDownload}
               className="lg:hidden lg:mt-0 rounded-3xl flex justify-center lg:justify-start mt-4 mb-4 cursor-pointer hover:scale-105 transition-transform"
             >
@@ -155,7 +155,7 @@ export default function HomePage() {
                 alt="Download APK"
                 className="w-76 h-auto object-contain"
               />
-            </div> */}
+            </div>
 
             {/* Text content positioned on the left */}
             <h1 className="text-3xl lg:text-5xl font-bold text-center lg:text-left text-white mb-6 leading-normal">
