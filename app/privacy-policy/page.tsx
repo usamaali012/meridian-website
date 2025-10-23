@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
 
                 <div className="bg-blue-50 border-l-4 border-[#0A509E] p-6 mb-8">
                     <p className="text-gray-700 leading-relaxed">
-                        At Meridian Enterprises, we are committed to protecting your personal information with the
+                        At Meridian Enterprises (Pvt) Ltd, we are committed to protecting your personal information with the
                         highest standards of care. This Privacy Policy explains how we collect, use, share, store, and
                         secure your data when you use our website, mobile application, or professional IT consulting
                         services in Pakistan. By accessing our platform or services, you agree to the practices outlined in
@@ -24,8 +24,8 @@ export default function PrivacyPolicy() {
                 <section className="mb-8">
                     <h2 className="text-2xl font-semibold text-gray-900 mb-4">Who We Are & How to Contact Us</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        Meridian Enterprises is a service provider of IT consulting and digital solutions in Pakistan.
-                        Our innovative platform and services empower you to manage capital & monitor funds activity
+                        Meridian Enterprises (Pvt) Ltd is a service provider of IT consulting and digital solutions in Pakistan.
+                        Our innovative platform and services empower you to manage digital infrastructure activity
                         efficiently.
                     </p>
                     <p className="text-gray-700 leading-relaxed mb-4">
@@ -62,9 +62,6 @@ export default function PrivacyPolicy() {
                         <li>
                             <strong>Identity and Contact Information:</strong> Full name, email address, phone number, CNIC
                             (where required for verification), and mailing address.
-                        </li>
-                        <li>
-                            <strong>Financial Information:</strong> Bank account details and capital portfolio.
                         </li>
                         <li>
                             <strong>Account Information:</strong> Login credentials, user preferences, and consent choices.
@@ -175,7 +172,7 @@ export default function PrivacyPolicy() {
                     <p className="text-gray-700 leading-relaxed mb-4">The app may request permissions such as:</p>
                     <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
                         <li>
-                            <strong>Camera:</strong> For document scanning (e.g., identity verification or financial documents for KYC compliance).
+                            <strong>Camera:</strong> For document scanning (e.g., identity verification for KYC compliance).
                         </li>
                         <li>
                             <strong>Contacts:</strong> For optional collaboration features (with your consent).
@@ -317,7 +314,7 @@ export default function PrivacyPolicy() {
 
                 <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-12">
                     <p className="text-gray-700 leading-relaxed text-center">
-                        Thank you for trusting Meridian Enterprises. We are committed to transparency, security, and respecting
+                        Thank you for trusting Meridian Enterprises (Pvt) Ltd. We are committed to transparency, security, and respecting
                         your privacy. For any questions or concerns, please contact us at:
                         <a href="mailto:info@meridianent.net" className="text-[#0A509E] hover:underline font-medium">
                             info@meridianent.net

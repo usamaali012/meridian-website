@@ -53,41 +53,6 @@ export default function ServicesPage() {
     },
   ]
 
-  const financialServices = [
-    {
-      icon: Calculator,
-      title: "Financial Planning & Analysis",
-      description:
-        "Strategic financial planning services including budgeting, forecasting, and financial modeling to help your business achieve sustainable growth.",
-      features: ["Budget Planning", "Financial Forecasting", "Risk Assessment", "Performance Analysis"],
-      color: "from-indigo-500 to-purple-500",
-    },
-    {
-      icon: TrendingUp,
-      title: "Investment Advisory",
-      description:
-        "Expert investment guidance and portfolio management services to maximize returns while managing risk according to your business objectives.",
-      features: ["Portfolio Management", "Risk Analysis", "Market Research", "Investment Strategy"],
-      color: "from-emerald-500 to-green-500",
-    },
-    {
-      icon: FileText,
-      title: "Tax & Compliance Services",
-      description:
-        "Comprehensive tax planning, preparation, and compliance services to ensure your business meets all regulatory requirements efficiently.",
-      features: ["Tax Planning", "Compliance Management", "Audit Support", "Regulatory Guidance"],
-      color: "from-amber-500 to-orange-500",
-    },
-    {
-      icon: Users,
-      title: "Business Consulting",
-      description:
-        "Strategic business consulting services including process optimization, organizational development, and growth strategy implementation.",
-      features: ["Process Optimization", "Growth Strategy", "Organizational Development", "Change Management"],
-      color: "from-rose-500 to-pink-500",
-    },
-  ]
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       <Navigation />
@@ -100,7 +65,7 @@ export default function ServicesPage() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0A509E] to-[#0396C7]">Services</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive digital systems solutions and expert financial consultancy services designed to transform and
+            Comprehensive digital systems solutions services designed to transform and
             grow your business
           </p>
         </div>
@@ -162,7 +127,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Financial Consultancy Services */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-50 to-blue-50">
+      {/* <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Financial Consultancy Services</h2>
@@ -180,7 +145,7 @@ export default function ServicesPage() {
                   className="group relative overflow-hidden bg-white/70 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/80 rounded-2xl p-8"
                 >
                   {/* Hover Glow Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#0A509E]/10 to-[#0396C7]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                  {/* <div className="absolute inset-0 bg-gradient-to-r from-[#0A509E]/10 to-[#0396C7]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
 
                   <div className="relative z-10">
                     <div
@@ -214,14 +179,14 @@ export default function ServicesPage() {
             })}
           </div>
         </div>
-      </section>
+      </section> */} 
 
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Ready to Transform Your Business?</h2>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Let our experts help you choose the right combination of digital systems and financial services for your
+            Let our experts help you choose the right combination of digital systems and services for your
             unique needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

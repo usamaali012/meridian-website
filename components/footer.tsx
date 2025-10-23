@@ -10,8 +10,8 @@ export default function Footer() {
       { label: "Camera Solutions", href: "/" },
       { label: "Network Infrastructure", href: "/" },
       { label: "Telephone Systems", href: "/" },
-      { label: "Financial Planning", href: "/" },
-      { label: "Business Consulting", href: "/" },
+      { label: "Digital System Planning", href: "/" },
+
     ],
     company: [
       { label: "About Us", href: "/about" },
@@ -47,11 +47,11 @@ export default function Footer() {
           <div className="lg:col-span-1 pr-6">
             <div className="flex items-center space-x-2 mb-4">
               <div>
-                <img src="/pics/meridian-logo.png" alt="logo" className="w-[90%] h-auto" />
+                <img src="/pics/meridian-logo.svg" alt="logo" className="w-[90%] h-auto" />
               </div>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Empowering businesses with cutting-edge digital systems and expert financial consultancy services for
+              Empowering companies with cutting-edge digital systems and expert consultancy services for
               sustainable growth and success.
             </p>
           </div>
@@ -134,7 +134,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-400 mb-4 md:mb-0">
-              © {currentYear} Meridian Enterprise. All rights reserved.
+              © {currentYear} Meridian Enterprises (Pvt) Ltd. All rights reserved.
             </div>
 
             {/* Social Links */}

@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     icon: "/favicon.png",
   },
   description:
-    "Professional digital systems solutions including surveillance, security cameras, networking, telephone exchange systems, and expert financial consultancy services.",
+    "Professional digital systems solutions including surveillance, security cameras, networking, telephone exchange systems, and expert consultancy services.",
   keywords:
-    "digital systems, security cameras, surveillance, networking, telephone exchange, financial consultancy, business solutions",
+    "digital systems, security cameras, surveillance, networking, telephone exchange, business solutions",
 }
 
 export default function RootLayout({

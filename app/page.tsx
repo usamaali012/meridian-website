@@ -166,7 +166,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-base lg:text-lg italic text-justify lg:text-left px-2 lg:px-0 text-gray-100 mb-8 leading-relaxed">
-              "Comprehensive digital systems solutions and expert financial consultancy to drive your business forward in
+              "Comprehensive digital systems solutions consultancy to drive your business forward in
               the modern world"
             </p>
 

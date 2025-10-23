@@ -18,13 +18,13 @@ export default function AboutPage() {
       icon: Target,
       title: "Our Mission",
       description:
-        "To empower businesses with innovative digital systems and strategic financial guidance that drives sustainable growth and success.",
+        "To empower businesses with innovative digital systems and strategic deployment guidance that drives sustainable growth and success.",
     },
     {
       icon: Users,
       title: "Our Team",
       description:
-        "A diverse group of experts in technology and finance, committed to delivering exceptional solutions tailored to your business needs.",
+        "A diverse group of experts in technology and digital services, committed to delivering exceptional solutions tailored to your business needs.",
     },
     {
       icon: Award,
@@ -97,7 +97,7 @@ export default function AboutPage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4 relative z-20">
               Why Choose{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0A509E] to-[#0396C7]">
-                Meridian Enterprises
+                Meridian Enterprises (Pvt) Ltd
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto relative z-20">

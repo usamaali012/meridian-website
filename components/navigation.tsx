@@ -24,7 +24,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-18 mx-24">
 
           <div>
-            <img src="/pics/meridian-logo.png" alt="Meridian Logo" className="w-[80%] md:w-[60%]" />
+            <img src="/pics/meridian-logo.svg" alt="Meridian Logo" className="w-[80%] md:w-[60%]" />
           </div>
           
           {/* Desktop Navigation */}
