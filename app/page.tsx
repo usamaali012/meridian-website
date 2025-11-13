@@ -89,22 +89,22 @@ export default function HomePage() {
     },
   ]
 
-  const financialServices = [
-    {
-      icon: Calculator,
-      title: "Financial Planning & Analysis",
-      description:
-        "Strategic financial planning services including budgeting, forecasting, and financial modeling to help your business achieve sustainable growth.",
-      features: ["Budget Planning", "Financial Forecasting", "Performance Analysis"],
-    },
-    {
-      icon: TrendingUp,
-      title: "Investment Advisory",
-      description:
-        "Expert investment guidance and portfolio management services to maximize returns while managing risk according to your business objectives.",
-      features: ["Risk Analysis", "Market Research", "Investment Strategy"],
-    },
-  ]
+  // const financialServices = [
+  //   {
+  //     icon: Calculator,
+  //     title: "Financial Planning & Analysis",
+  //     description:
+  //       "Strategic financial planning services including budgeting, forecasting, and financial modeling to help your business achieve sustainable growth.",
+  //     features: ["Budget Planning", "Financial Forecasting", "Performance Analysis"],
+  //   },
+  //   {
+  //     icon: TrendingUp,
+  //     title: "Investment Advisory",
+  //     description:
+  //       "Expert investment guidance and portfolio management services to maximize returns while managing risk according to your business objectives.",
+  //     features: ["Risk Analysis", "Market Research", "Investment Strategy"],
+  //   },
+  // ]
 
   const trustedPartners = [
     { name: "Microsoft", logo: "/microsoft-logo.png" },

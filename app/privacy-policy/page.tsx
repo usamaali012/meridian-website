@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
                         efficiently.
                     </p>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        Our company product brand name is <b>“Wijdan”</b>, available on both <b>Android</b> and <b>iOS</b> platforms.
+                        Our company product brand name is <b>“Wijdaan”</b>, available on both <b>Android</b> and <b>iOS</b> platforms.
                         The app is designed to provide secure, seamless access to manage capital & monitor funds
                         activity.
                     </p>
