@@ -3,8 +3,12 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button"
+import {
+  ArrowRight,
+} from "lucide-react"
 
 export default function Home() {
 const services = [
@@ -44,6 +48,14 @@ const servicesData = [
       "Offering smart camera systems with HD monitoring, remote access, and analytics to help you safeguard and manage your environment effectively.",
   },
 ];
+const trustedPartners = [
+    { name: "Microsoft", logo: "/microsoft-logo.png" },
+    { name: "Cisco", logo: "/cisco-logo.svg" },
+    { name: "Dell Technologies", logo: "/dell-technologies-logo.png" },
+    { name: "HP Enterprise", logo: "/hp-enterprise-logo.jpg" },
+    { name: "Fortinet", logo: "/fortinet-logo.png" },
+    { name: "Hikvision", logo: "/hikvision-logo.jpg" },
+  ]
 
   const [selectedServiceId, setSelectedServiceId] = useState("Security System");
   const selectedService =
@@ -56,19 +68,19 @@ const servicesData = [
       <section className="relative w-full h-screen overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 bg-[url(/herosec/hero1.jpg)] bg-cover bg-center" />
-        <div className="absolute inset-0 bg-linear-to-b from-[#0A509E]/90 to-[#243972]/60" />
+        <div className="absolute inset-0 bg-linear-to-b from-[#0A509E]/80 to-[#243972]/40" />
 
         {/* Content */}
         <div className="relative z-20 mx-auto lg:pl-30 h-full flex flex-col justify-center">
           <div className="max-w-2xl px-8">
-            <h1 className="text-5xl md:text-6xl text-slate-600 mb-4 leading-tight">
+            <h1 className="text-5xl md:text-6xl text-white mb-4 leading-tight">
               Driving <span className="text-[#00bcd4]">Growth</span>
               <br />
               with Innovation in
               <br />
               Security Solutions
             </h1>
-            <p className="text-md text-slate-600/90 mb-8 max-w-xl">
+            <p className="text-md text-white mb-8 max-w-xl">
               “Comprehensive digital systems solutions consultancy to drive your
               business forward in the modern world.”
             </p>
@@ -93,7 +105,7 @@ const servicesData = [
                     alt={service.title}
                     className="absolute top-6 left-10 w-12"
                   />
-                  <div className="absolute bottom-12 w-full text-center text-2xl text-slate-600 font-normal">
+                  <div className="absolute bottom-12 w-full text-center text-2xl text-white font-normal">
                     {service.title}
                   </div>
                 </div>
@@ -165,7 +177,7 @@ const servicesData = [
             <h3 className="text-2xl md:text-4xl font-semibold text-slate-800 mb-4">
               {selectedService.title}
             </h3>
-            <p className="text-gray-900 leading-relaxed mb-8">
+            <p className="text-gray-600 leading-relaxed mb-8">
               {selectedService.description}
             </p>
             <Link
@@ -175,8 +187,185 @@ const servicesData = [
               Learn More
             </Link>
           </div>
-
       </section>
+
+      {/* Floating Testimonial Section */}
+      <section className="relative w-full flex justify-center items-center py-10 mt-10">
+        {/* Soft background blur behind box */}
+        <div className="absolute inset-0 flex justify-center">
+          <div className="w-[80%] h-[300px] bg-gray-200/40 blur-3xl rounded-3xl"></div>
+        </div>
+
+        <div
+          className="
+            relative z-20 w-[80%]  
+            bg-white rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.08)]
+            grid grid-cols-1 md:grid-cols-2 overflow-hidden
+          "
+        >
+          {/* Left Image */}
+          <div className="w-full h-full">
+            <img src="/digitalsystems.jpg"  alt="Profile" className="w-full h-full object-cover"/>
+          </div>
+
+          {/* Right Content */}
+          <div className="p-10 flex flex-col justify-center">
+            <div className="text-6xl text-gray-300 mb-1">“</div>
+
+            <p className="text-2xl font-semibold text-gray-800 leading-relaxed mb-6">
+              Our goal is to deliver exceptional, scalable and secure IT solutions
+              that help businesses grow with full confidence.
+            </p>
+
+            <div>
+              <h4 className="text-xl font-semibold text-[#0A509E]">M. Kamran Khan</h4>
+              <p className="text-gray-500 text-sm">CEO — Meridian Enterprises</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Us */}
+      <section className="px-50 py-18 flex flex-row gap-20 z-0 relative h-[300px] w-full bg-[url('/buildings.jpeg')] object-fill bg-center overflow-hidden bg-no-repeat">
+      <div className="z-10 absolute inset-0 bg-[#0A509E] opacity-70 "></div>
+      <div className="flex flex-col gap-2 justify-center">
+        <span className="z-30 text-white text-6xl font-bold text-start">
+          Get In Touch with us
+        </span>
+        <span className="z-30 text-xl font-light text-orange-200 text-start">
+          Please feel free to contact us. We're are excited to get in touch with you, feel free to ask anything. We are at your service
+        </span>
+      </div>
+      <div className="flex items-center justify-center mx-auto">
+        <button className="flex z-30 px-12 py-4 bg-white text-black border-2 border-white rounded-full hover:text-[#1e5a96] items-center transition text-xl">
+            Contact Us
+        </button>
+      </div>
+      </section>
+
+      {/* Trusted Partners */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f2f2f2]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Trusted{" "}
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#0A509E] to-[#0396C7]">
+                Partners
+              </span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              We work with industry-leading technology partners to deliver the best solutions for your business
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+            {trustedPartners.map((partner, index) => (
+              <div
+                key={index}
+                className="group flex items-center justify-center p-6 backdrop-blur-sm hover:bg-white/70 hover:shadow-lg transition-all duration-300 hover:scale-110"
+              >
+                <img
+                  src={partner.logo || "/placeholder.svg"}
+                  alt={`${partner.name} logo`}
+                  className="h-auto w-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300 filter grayscale group-hover:grayscale-0"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-6">Ready to leverage these partnerships for your business success?</p>
+            <Button
+              size="lg"
+              className="bg-linear-to-r from-[#0A509E] to-[#0396C7] hover:from-[#0A509E]/90 hover:to-[#0396C7]/90 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+            >
+              Get Free Consultation
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* About + Trusted Section */}
+      <section className="max-w-7xl mx-auto py-20 px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+          {/* LEFT TOP – Image + Play Button */}
+          <div className="relative group">
+            <img
+              src="/your-image-1.jpg"
+              alt="City Buildings"
+              className="w-full h-full object-cover rounded-xl"
+            />
+            
+          </div>
+
+          {/* RIGHT TOP – Heading + Text */}
+          <div className="flex flex-col justify-center p-6">
+            <span className="uppercase text-sm font-semibold tracking-wider text-[#0A509E]">
+              Did you know that
+            </span>
+
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mt-2">
+              We are trusted by more <br /> than 5,000 clients
+            </h2>
+
+            <p className="text-gray-600 mt-4 leading-relaxed">
+              A wonderful serenity has taken possession of my entire soul, like
+              these sweet mornings of spring. More than 25 years of experience
+              working in the industry has helped us build reliable services in
+              strategy, consulting, and digital transformation.
+            </p>
+
+            <button className="mt-8 px-6 py-3 border-2 border-[#0A509E] text-[#0A509E] font-semibold rounded-full hover:bg-[#0A509E] hover:text-white transition-all">
+              Read Our Story
+            </button>
+          </div>
+
+          {/* LEFT BOTTOM – Dark Block + Text */}
+          <div className="bg-[#1A237E] text-white p-12 rounded-xl">
+            <h2 className="text-3xl font-bold mb-4">
+              We are an expert in <br /> this field
+            </h2>
+
+            <p className="text-blue-100 mb-6 leading-relaxed">
+              Yet I feel that I never was a greater artist than now. When, while the
+              lovely valley teems with nature.
+            </p>
+
+            <ul className="space-y-3 text-blue-100">
+              <li className="flex items-center gap-3">
+                ✓ Premium services and beyond your expectation
+              </li>
+              <li className="flex items-center gap-3">
+                ✓ Get the best support among all vendors
+              </li>
+              <li className="flex items-center gap-3">
+                ✓ Fully responsive and works great on all devices
+              </li>
+              <li className="flex items-center gap-3">
+                ✓ Tons of admin panel options
+              </li>
+            </ul>
+
+            <button className="mt-8 px-6 py-3 bg-white text-[#1A237E] font-semibold rounded-full hover:bg-gray-100 transition-all">
+              Read Our Story
+            </button>
+          </div>
+
+          {/* RIGHT BOTTOM – Image */}
+          <div>
+            <img
+              src="/your-image-2.jpg"
+              alt="Workspace"
+              className="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+
+        </div>
+      </section>
+
+
 
       <Footer />
     </main>

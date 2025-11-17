@@ -8,7 +8,6 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
-  // Detect scroll position
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10)
@@ -21,7 +20,7 @@ export function Navbar() {
   return (
     <nav
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-[#0A509E] shadow-lg" : "bg-transparent"
+        isScrolled ? "bg-[#0A509E] shadow-lg" : "bg-[#0A509E]/60"
       } backdrop-blur-sm`}
     >
       <div className="lg:mx-52 pt-3">
