@@ -7,7 +7,7 @@ export default function About() {
       <Navbar2 />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#1e5a96] to-[#0d2d47] text-white py-20 px-4">
+      <section className="bg-linear-to-r from-[#1e5a96] to-[#0d2d47] text-white py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">About Meridian Enterprises</h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">

@@ -4,7 +4,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaLinkedin
 
 export function Footer() {
   return (
-    <footer className="relative bg-gradient-to-br from-[#0a1e2e] via-[#0d2d47] to-[#0f3a5a] text-white overflow-hidden">
+    <footer className="relative bg-linear-to-br from-[#0a1e2e] via-[#0d2d47] to-[#0f3a5a] text-white overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-64 h-64 bg-blue-400 rounded-full blur-3xl"></div>
@@ -20,11 +20,11 @@ export function Footer() {
             <div className="mb-6">
               {/* Replace '/logo.png' with your actual logo path */}
               <Image 
-                src="/logo.png" 
+                src="/meridian-logo.svg" 
                 alt="Company Logo" 
                 width={180} 
                 height={60}
-                className="h-12 w-auto brightness-0 invert hover:scale-105 transition-transform duration-300"
+                className="brightness-0 invert hover:invert-0 hover:brightness-100 hover:scale-105 transition-transform duration-300"
               />
             </div>
             <p className="text-white/70 leading-relaxed mb-6">
@@ -122,7 +122,7 @@ export function Footer() {
             </h4>
             <div className="space-y-4">
               <div className="flex items-start gap-3 group hover:translate-x-2 transition-transform duration-300">
-                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500 transition-colors duration-300">
+                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-blue-500 transition-colors duration-300">
                   <FaPhone className="text-sm" />
                 </div>
                 <div>
@@ -134,7 +134,7 @@ export function Footer() {
               </div>
 
               <div className="flex items-start gap-3 group hover:translate-x-2 transition-transform duration-300">
-                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500 transition-colors duration-300">
+                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-blue-500 transition-colors duration-300">
                   <FaEnvelope className="text-sm" />
                 </div>
                 <div>
@@ -149,7 +149,7 @@ export function Footer() {
               </div>
 
               <div className="flex items-start gap-3 group hover:translate-x-2 transition-transform duration-300">
-                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500 transition-colors duration-300">
+                <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-blue-500 transition-colors duration-300">
                   <FaMapMarkerAlt className="text-sm" />
                 </div>
                 <div>

@@ -237,7 +237,7 @@ const trustedPartners = [
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
             />
             {/* Overlay that appears on hover */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0A509E]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-linear-to-trom-[#0A509E]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
 
           {/* RIGHT TOP – Heading + Text */}
@@ -307,7 +307,7 @@ const trustedPartners = [
               className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-110"
             />
             {/* Overlay that appears on hover */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1A237E]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#1A237E]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
 
         </div>
