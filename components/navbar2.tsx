@@ -59,7 +59,7 @@ export function Navbar2() {
               Contact us
             </Link>
             <Link
-              href="/privacy"
+              href="/privacy-policy/"
               className="text-white px-3 py-2 rounded-md text-lg hover:bg-white/10 transition"
             >
               Privacy Policy
@@ -115,7 +115,7 @@ export function Navbar2() {
               Contact us
             </Link>
             <Link
-              href="/privacy"
+              href="/privacy-policy/"
               className="block text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-white/10 transition"
               onClick={() => setIsOpen(false)}
             >
