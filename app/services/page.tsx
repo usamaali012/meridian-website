@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/navbar"
+import { Navbar2 } from "@/components/navbar2"
 import { Footer } from "@/components/footer"
 
 export default function Services() {
@@ -43,7 +43,7 @@ export default function Services() {
 
   return (
     <main className="min-h-screen pt-20">
-      <Navbar />
+      <Navbar2 />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-[#1e5a96] to-[#0d2d47] text-white py-20 px-4">

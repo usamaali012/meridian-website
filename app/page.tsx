@@ -14,7 +14,7 @@ export default function Home() {
 const services = [
     { iconsrc: "/icons/security1.svg", title: "Security Systems" },
     { iconsrc: "/icons/network1.svg", title: "Network Solutions" },
-    { iconsrc: "/icons/telecom1.svg", title: "Telecom Exchange" },
+    { iconsrc: "/icons/telecom1.svg", title: "Telecom Services" },
     { iconsrc: "/icons/camera-solution.svg", title: "Camera Solutions" },
   ];
 
@@ -115,7 +115,7 @@ const trustedPartners = [
         </div>
       </section>
 
-      {/*  Services Section  */}
+      {/*  Services */}
       <section className="py-18 bg-white relative overflow-hidden max-w-[90%] mx-auto px-4">
 
           {/* Header */}
@@ -189,7 +189,7 @@ const trustedPartners = [
           </div>
       </section>
 
-      {/* Floating Testimonial Section */}
+      {/* Testimonials */}
       <section className="relative w-full flex justify-center items-center py-10 mt-10">
         {/* Soft background blur behind box */}
         <div className="absolute inset-0 flex justify-center">
@@ -224,26 +224,96 @@ const trustedPartners = [
           </div>
         </div>
       </section>
+      
+      {/* Trusted Section */}
+      <section className="max-w-7xl mx-auto py-20 px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
 
-      {/* Contact Us */}
-      <section className="px-50 py-18 flex flex-row gap-20 z-0 relative h-[300px] w-full bg-[url('/buildings.jpeg')] object-fill bg-center overflow-hidden bg-no-repeat">
-      <div className="z-10 absolute inset-0 bg-[#0A509E] opacity-70 "></div>
-      <div className="flex flex-col gap-2 justify-center">
-        <span className="z-30 text-white text-6xl font-bold text-start">
-          Get In Touch with us
-        </span>
-        <span className="z-30 text-xl font-light text-orange-200 text-start">
-          Please feel free to contact us. We're are excited to get in touch with you, feel free to ask anything. We are at your service
-        </span>
-      </div>
-      <div className="flex items-center justify-center mx-auto">
-        <button className="flex z-30 px-12 py-4 bg-white text-black border-2 border-white rounded-full hover:text-[#1e5a96] items-center transition text-xl">
-            Contact Us
-        </button>
-      </div>
+          {/* Our Story - Image */}
+          <div className="relative group overflow-hidden">
+            <img
+              src="/partnership.jpg"
+              alt="City Buildings"
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+            />
+            {/* Overlay that appears on hover */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A509E]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          </div>
+
+          {/* RIGHT TOP – Heading + Text */}
+          <div className="flex flex-col justify-center p-6 bg-white hover:bg-gray-50 transition-colors duration-300">
+            <span className="uppercase text-sm font-semibold tracking-wider text-[#0A509E] hover:text-[#083d7a] transition-colors duration-300">
+              Further Information
+            </span>
+
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mt-2 hover:text-[#0A509E] transition-colors duration-300">
+               Trusted by more than 80 clients
+            </h2>
+
+            <p className="text-gray-600 mt-4 leading-relaxed">
+              Over the years, we've built strong, long-term relationships with our clients by 
+              delivering consistent value and dependable support. Today, we proudly serve 
+              more than 80 clients across multiple industries, helping them scale, optimize, 
+              and grow through solutions built on trust, transparency, and results.
+            </p>
+
+            <button className="mt-8 px-6 py-3 border-2 border-[#0A509E] text-[#0A509E] font-semibold rounded-full hover:bg-[#0A509E] hover:text-white hover:shadow-lg hover:scale-105 transition-all duration-300 active:scale-95">
+              Read Our Story
+            </button>
+          </div>
+
+          {/* LEFT BOTTOM – Dark Block + Text */}
+          <div className="bg-[#1A237E] text-white p-12 hover:bg-[#0d1a5c] transition-colors duration-500 group">
+            <h2 className="text-3xl font-semibold mb-4 group-hover:translate-x-2 transition-transform duration-300">
+              Longstanding Expertise
+            </h2>
+
+            <p className="text-blue-100 mb-6 leading-relaxed group-hover:text-white transition-colors duration-300">
+              With years of experience in telecommunication and technology services, we 
+              provide reliable, scalable, and future-ready solutions that empower businesses 
+              to stay connected and competitive.
+            </p>
+
+            <ul className="space-y-3 text-blue-100">
+              <li className="flex items-center gap-3 hover:translate-x-2 hover:text-white transition-all duration-300 cursor-default">
+                <span className="text-green-400">✓</span>
+                High-performance telecom infrastructure solutions
+              </li>
+              <li className="flex items-center gap-3 hover:translate-x-2 hover:text-white transition-all duration-300 cursor-default">
+                <span className="text-green-400">✓</span>
+                24/7 technical support with rapid issue resolution
+              </li>
+              <li className="flex items-center gap-3 hover:translate-x-2 hover:text-white transition-all duration-300 cursor-default">
+                <span className="text-green-400">✓</span>
+                Seamless integration across devices, networks, and platforms
+              </li>
+              <li className="flex items-center gap-3 hover:translate-x-2 hover:text-white transition-all duration-300 cursor-default">
+                <span className="text-green-400">✓</span>
+                Advanced monitoring, automation, and optimization tools
+              </li>
+            </ul>
+
+
+            <button className="mt-8 px-6 py-3 bg-white text-[#1A237E] font-semibold rounded-full hover:bg-gray-100 hover:shadow-lg hover:scale-105 transition-all duration-300 active:scale-95">
+              Read Our Story
+            </button>
+          </div>
+
+          {/* Experts-Image */}
+          <div className="relative group overflow-hidden">
+            <img
+              src="/digitalsols.png" 
+              alt="Workspace" 
+              className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-110"
+            />
+            {/* Overlay that appears on hover */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1A237E]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          </div>
+
+        </div>
       </section>
 
-      {/* Trusted Partners */}
+      {/* Partners */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f2f2f2]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -286,86 +356,23 @@ const trustedPartners = [
         </div>
       </section>
 
-      {/* About + Trusted Section */}
-      <section className="max-w-7xl mx-auto py-20 px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-
-          {/* LEFT TOP – Image + Play Button */}
-          <div className="relative group">
-            <img
-              src="/your-image-1.jpg"
-              alt="City Buildings"
-              className="w-full h-full object-cover rounded-xl"
-            />
-            
-          </div>
-
-          {/* RIGHT TOP – Heading + Text */}
-          <div className="flex flex-col justify-center p-6">
-            <span className="uppercase text-sm font-semibold tracking-wider text-[#0A509E]">
-              Did you know that
-            </span>
-
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mt-2">
-              We are trusted by more <br /> than 5,000 clients
-            </h2>
-
-            <p className="text-gray-600 mt-4 leading-relaxed">
-              A wonderful serenity has taken possession of my entire soul, like
-              these sweet mornings of spring. More than 25 years of experience
-              working in the industry has helped us build reliable services in
-              strategy, consulting, and digital transformation.
-            </p>
-
-            <button className="mt-8 px-6 py-3 border-2 border-[#0A509E] text-[#0A509E] font-semibold rounded-full hover:bg-[#0A509E] hover:text-white transition-all">
-              Read Our Story
-            </button>
-          </div>
-
-          {/* LEFT BOTTOM – Dark Block + Text */}
-          <div className="bg-[#1A237E] text-white p-12 rounded-xl">
-            <h2 className="text-3xl font-bold mb-4">
-              We are an expert in <br /> this field
-            </h2>
-
-            <p className="text-blue-100 mb-6 leading-relaxed">
-              Yet I feel that I never was a greater artist than now. When, while the
-              lovely valley teems with nature.
-            </p>
-
-            <ul className="space-y-3 text-blue-100">
-              <li className="flex items-center gap-3">
-                ✓ Premium services and beyond your expectation
-              </li>
-              <li className="flex items-center gap-3">
-                ✓ Get the best support among all vendors
-              </li>
-              <li className="flex items-center gap-3">
-                ✓ Fully responsive and works great on all devices
-              </li>
-              <li className="flex items-center gap-3">
-                ✓ Tons of admin panel options
-              </li>
-            </ul>
-
-            <button className="mt-8 px-6 py-3 bg-white text-[#1A237E] font-semibold rounded-full hover:bg-gray-100 transition-all">
-              Read Our Story
-            </button>
-          </div>
-
-          {/* RIGHT BOTTOM – Image */}
-          <div>
-            <img
-              src="/your-image-2.jpg"
-              alt="Workspace"
-              className="w-full h-full object-cover rounded-xl"
-            />
-          </div>
-
-        </div>
+      {/* Contact */}
+      <section className="px-50 py-18 flex flex-row gap-20 z-0 relative h-[300px] w-full bg-[url('/buildings.jpeg')] object-fill bg-center overflow-hidden bg-no-repeat">
+      <div className="z-10 absolute inset-0 bg-[#0A509E] opacity-70 "></div>
+      <div className="flex flex-col gap-2 justify-center">
+        <span className="z-30 text-white text-6xl font-bold text-start">
+          Get In Touch with us
+        </span>
+        <span className="z-30 text-xl font-light text-orange-200 text-start">
+          Please feel free to contact us. We're are excited to get in touch with you, feel free to ask anything. We are at your service
+        </span>
+      </div>
+      <div className="flex items-center justify-center mx-auto">
+        <button className="flex z-30 px-12 py-4 bg-white text-black border-2 border-white rounded-full hover:text-[#1e5a96] items-center transition text-xl">
+            Contact Us
+        </button>
+      </div>
       </section>
-
-
 
       <Footer />
     </main>

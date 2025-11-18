@@ -4,7 +4,7 @@ import Link from "next/link"
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
-export function Navbar() {
+export function Navbar2() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -20,7 +20,7 @@ export function Navbar() {
   return (
     <nav
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-[#0A509E] shadow-lg" : "bg-[#0A509E]/10"
+        isScrolled ? "bg-[#0A509E] shadow-lg" : "bg-[#0A509E]/95"
       } backdrop-blur-sm`}
     >
       <div className="lg:mx-52 pt-3">

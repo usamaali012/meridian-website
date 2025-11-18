@@ -7,8 +7,11 @@ import "./globals.css"
 const kanit = Kanit({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] })
 
 export const metadata: Metadata = {
-  title: "Meridian Enterprises",
-  description: "Surveillance and Digital Solution Systems"
+  title: "Meridian Enterprises (Pvt) Ltd",
+  description: "Surveillance and Digital Solution Systems",
+  icons:{
+    icon:"/favicon.png",
+  }
 }
 
 export default function RootLayout({
