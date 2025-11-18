@@ -355,11 +355,11 @@ const trustedPartners = [
           Please feel free to contact us. We're are excited to get in touch with you, feel free to ask anything. We are at your service
         </span>
       </div>
-      <div className="flex items-center justify-center mx-auto">
+      <Link href='/contactus/' className="flex items-center justify-center mx-auto">
         <button className="flex z-30 px-12 py-4 bg-white text-black border-2 border-white rounded-full hover:text-[#1e5a96] items-center transition text-xl">
             Contact Us
         </button>
-      </div>
+      </Link>
       </section>
 
       <Footer />

@@ -75,7 +75,7 @@ export function Footer() {
                 { name: 'Home', href: '/' },
                 { name: 'Services', href: '/services' },
                 { name: 'About Us', href: '/about' },
-                { name: 'Privacy Policy', href: '/privacy' },
+                { name: 'Privacy Policy', href: '/privacy-policy/' },
               ].map((link) => (
                 <li key={link.name}>
                   <Link 
@@ -173,7 +173,7 @@ export function Footer() {
               <Link href="/terms" className="text-white/50 hover:text-white transition-colors">
                 Terms of Service
               </Link>
-              <Link href="/privacy" className="text-white/50 hover:text-white transition-colors">
+              <Link href="/privacy-policy/" className="text-white/50 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
             </div>
