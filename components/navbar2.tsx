@@ -53,7 +53,7 @@ export function Navbar2() {
               About
             </Link>
             <Link
-              href="/#contact"
+              href="/contactus/"
               className="text-white px-3 py-2 rounded-md text-lg hover:bg-white/10 transition"
             >
               Contact us

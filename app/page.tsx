@@ -92,24 +92,12 @@ const trustedPartners = [
           <div className="w-auto lg:max-w-[80%] mx-8 lg:mx-auto px-0">
             <div className="grid grid-cols-1 md:grid-cols-4 h-[24vh]">
               {services.map((service, index) => (
-                <div
-                  key={index}
-                  className={`relative p-10 text-center transition transform hover:scale-103 hover:shadow-2xl hover:shadow-[#00bcd4]/40 ${
-                    index === 0
-                      ? "bg-[#19348B]/80"
-                      : "bg-[#19348B]/70 backdrop-blur-sm"
-                  }`}
-                >
-                  <img
-                    src={service.iconsrc}
-                    alt={service.title}
-                    className="absolute top-6 left-10 w-12"
-                  />
+                <div key={index} className={`relative p-10 text-center transition hover:z-20 transform hover:border-2 hover:border-double hover:border-gray-400 hover:scale-103 hover:shadow-2xl hover:shadow-[#00bcd4]/40 ${ index === 0 ? "bg-[#19348B]/80" : "bg-[#19348B]/70 backdrop-blur-sm" }`}>
+                  <img src={service.iconsrc} alt={service.title} className="absolute top-6 left-10 w-12"/>
                   <div className="absolute bottom-12 w-full text-center text-2xl text-white font-normal">
                     {service.title}
                   </div>
-                </div>
-              ))}
+                </div>))}
             </div>
           </div>
         </div>

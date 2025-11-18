@@ -66,7 +66,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xl font-bold mb-6 relative inline-block">
+            <h4 className="text-xl font-semibold mb-6 relative inline-block">
               Quick Links
               <span className="absolute -bottom-2 left-0 w-12 h-1 bg-blue-400 rounded-full"></span>
             </h4>
@@ -91,7 +91,7 @@ export function Footer() {
 
           {/* Services (Optional - you can customize) */}
           <div>
-            <h4 className="text-xl font-bold mb-6 relative inline-block">
+            <h4 className="text-xl font-semibold mb-6 relative inline-block">
               Our Services
               <span className="absolute -bottom-2 left-0 w-12 h-1 bg-blue-400 rounded-full"></span>
             </h4>
@@ -116,7 +116,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div id="contact">
-            <h4 className="text-xl font-bold mb-6 relative inline-block">
+            <h4 className="text-xl font-semibold mb-6 relative inline-block">
               Get In Touch
               <span className="absolute -bottom-2 left-0 w-12 h-1 bg-blue-400 rounded-full"></span>
             </h4>
