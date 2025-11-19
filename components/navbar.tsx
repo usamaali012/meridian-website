@@ -21,17 +21,17 @@ export function Navbar() {
   return (
     <nav
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-[#0A509E] shadow-lg backdrop-blur-sm" : "bg-[#0A509E]/5"
+        isScrolled ? "bg-[#0A509E] shadow-lg backdrop-blur-sm" : "bg-[#0A509E]/0"
       }`}
     >
-      <div className="lg:mx-52 pt-3">
+      <div className="lg:mx-28 pt-3">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-4 text-white font-bold text-2xl">
             <Image
               src="/logo/meridian-logo-white.svg"
-              height={150}
-              width={180}
+              height={140}
+              width={160}
               alt="Meridian Enterprises Logo"
             />
           </Link>

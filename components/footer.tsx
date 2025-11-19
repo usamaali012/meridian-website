@@ -4,7 +4,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaLinkedin
 
 export function Footer() {
   return (
-    <footer className="relative bg-linear-to-br from-[#0a1e2e] via-[#0d2d47] to-[#0f3a5a] text-white overflow-hidden">
+    <footer className="relative bg-linear-to-b from-[#0A509E] to-[#243972] text-white overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-64 h-64 bg-blue-400 rounded-full blur-3xl"></div>
@@ -100,7 +100,7 @@ export function Footer() {
                 'Security Solutions',
                 'Network Solutions',
                 'Telecom Services',
-                'System Integration',
+                'Camera Solutions',
               ].map((service) => (
                 <li key={service}>
                   <Link 

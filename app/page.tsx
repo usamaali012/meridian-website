@@ -97,7 +97,7 @@ const trustedPartners = [
                   className={`group relative p-10 text-center transition opacity-90 hover:z-20 transform hover:border-2 hover:border-double hover:border-gray-400 hover:scale-105 hover:shadow-2xl hover:shadow-[#00bcd4]/40 duration-500`}
                   style={{ backgroundColor: service.tile_col }}
                 >
-                  <img src={service.iconsrc} alt={service.title} className="absolute top-6 left-10 w-18 bg-slate-400 p-4 border border-white group-hover:shadow-white group-hover:shadow-md rounded-full transform duration-700" />
+                  <img src={service.iconsrc} alt={service.title} className="absolute top-6 left-10 w-15 bg-slate-400 p-3 border border-white group-hover:shadow-white group-hover:shadow-md rounded-full transform duration-700" />
                   <div className="absolute bottom-12 w-full text-center text-2xl text-white font-normal">
                     {service.title}
                   </div>
@@ -355,7 +355,7 @@ const trustedPartners = [
         <span className="z-30 text-white text-6xl font-bold text-start">
           Get In Touch with us
         </span>
-        <span className="z-30 text-xl font-light text-orange-200 text-start">
+        <span className="z-30 text-xl font-light text-white text-start">
           Please feel free to contact us. We're are excited to get in touch with you, feel free to ask anything. We are at your service
         </span>
       </div>

@@ -13,7 +13,6 @@ export default function Services() {
       "Real-time Monitoring Solutions",
       "Cloud-based Recording Systems",
       "24/7 Security Monitoring",
-      "Mobile Access & Alerts",
     ],
   },
   {
@@ -26,7 +25,6 @@ export default function Services() {
       "LAN & WAN Solutions",
       "WiFi Infrastructure",
       "Network Security",
-      "Disaster Recovery & Backup",
     ],
   },
   {
@@ -104,7 +102,7 @@ export default function Services() {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-[350px] object-cover transform group-hover:scale-110 transition-all duration-700 ease-out"
+                  className="w-full h-[350px] object-cover object-center transform group-hover:scale-110 transition-all duration-700 ease-out"
                 />
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-linear-to-t from-[#0A509E]/80 via-[#0A509E]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

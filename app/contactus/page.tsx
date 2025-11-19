@@ -106,7 +106,7 @@ export default function ContactPage() {
       {/*Contact Form*/}
       <div className="bg-[url('/map-contactus.svg')] bg-cover bg-center bg-no-repeat py-12 relative">
       
-        <div className="absolute inset-0 bg-gray-100/70 opacity-50 z-0"></div>
+        <div className="absolute inset-0 bg-white opacity-75 z-0"></div>
 
         {/* Heading */}
         <div className="max-w-4xl mx-auto px-4 text-center mb-8 relative z-10">
