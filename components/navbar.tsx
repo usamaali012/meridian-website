@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import { FaUser } from "react-icons/fa"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,8 +21,8 @@ export function Navbar() {
   return (
     <nav
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-[#0A509E] shadow-lg" : "bg-[#0A509E]/10"
-      } backdrop-blur-sm`}
+        isScrolled ? "bg-[#0A509E] shadow-lg backdrop-blur-sm" : "bg-[#0A509E]/5"
+      }`}
     >
       <div className="lg:mx-52 pt-3">
         <div className="flex justify-between items-center h-20">
@@ -67,9 +68,17 @@ export function Navbar() {
           </div>
 
           {/* User Log-in Button */}
-          <button className="hidden md:block px-10 py-2 backdrop-blur-xl text-white border-2 border-white rounded-full hover:bg-white hover:text-[#1e5a96] transition text-lg">
-            User Log-in
-          </button>
+          <Link 
+            href="https://portal.meridianent.net/customer/sign-in?redirectURL=%2Fcustomer%2Fdashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:block"
+          >
+            <button className="px-10 py-2 backdrop-blur-xl text-white border-2 border-white rounded-full hover:bg-white hover:text-[#1e5a96] transition text-lg flex items-center gap-2 hover:scale-105 active:scale-95 duration-300">
+              <FaUser className="text-base" />
+              User Log-in
+            </button>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button

@@ -36,10 +36,7 @@ export default function ContactPage() {
       <Navbar2 />
 
       {/* Hero Banner */}
-      <div
-        className="relative mt-20 h-[500px] bg-center bg-cover bg-no-repeat flex items-center"
-        style={{ backgroundImage: "url('/contact-banner.png')" }}
-      >
+      <div className="relative mt-20 h-[500px] bg-center bg-cover bg-no-repeat flex items-center" style={{ backgroundImage: "url('/contact-banner.png')" }}>
         <div className="absolute inset-0 bg-linear-to-b from-[#0A509E]/90 via-[#0A509E]/20 to-[#0A509E]/5"></div>
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4">
           <h1 className="text-4xl lg:text-5xl font-extrabold text-white mb-1">
@@ -52,7 +49,7 @@ export default function ContactPage() {
       </div>
 
       {/* Info Columns */}
-      <div className="max-w-7xl mx-auto py-12 px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+      <div className="w-[90%] mx-auto py-12 px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
         {/* Phone */}
         <div>
           <FontAwesomeIcon
@@ -106,18 +103,23 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* === Contact Form Section === */}
-      <div className="bg-[#f3f3f3] py-12">
-        <div className="max-w-4xl mx-auto px-4 text-center mb-8">
+      {/*Contact Form*/}
+      <div className="bg-[url('/map-contactus.svg')] bg-cover bg-center bg-no-repeat py-12 relative">
+      
+        <div className="absolute inset-0 bg-gray-100/70 opacity-50 z-0"></div>
+
+        {/* Heading */}
+        <div className="max-w-4xl mx-auto px-4 text-center mb-8 relative z-10">
           <h2 className="text-5xl font-light text-gray-900 leading-relaxed">Leave us your info</h2>
           <p className="text-gray-600 mt-2">
             We will get in touch with you soon 
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto p-6 md:p-10">
+        {/* Form */}
+        <div className="max-w-6xl mx-auto p-6 md:p-10 relative z-10">
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Full Name + Email */}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Input
                 name="firstName"
@@ -139,14 +141,12 @@ export default function ContactPage() {
               />
             </div>
 
-            {/* Subject */}
             <Input
               name="subject"
               placeholder="Subject*"
               className="border border-gray-300 py-10 bg-white rounded-none"
             />
 
-            {/* Message */}
             <Textarea
               name="message"
               value={formData.message}
@@ -162,9 +162,11 @@ export default function ContactPage() {
                 Submit Now
               </Button>
             </div>
+
           </form>
         </div>
       </div>
+
 
       {/* Map */}
       <div className="py-10 bg-">

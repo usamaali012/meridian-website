@@ -12,10 +12,10 @@ import {
 
 export default function Home() {
 const services = [
-    { iconsrc: "/icons/security1.svg", title: "Security Systems" },
-    { iconsrc: "/icons/network1.svg", title: "Network Solutions" },
-    { iconsrc: "/icons/telecom1.svg", title: "Telecom Services" },
-    { iconsrc: "/icons/camera-solution.svg", title: "Camera Solutions" },
+    { iconsrc: "/icons/security1.svg", title: "Security Systems", tile_col:"#19348B" },
+    { iconsrc: "/icons/network1.svg", title: "Network Solutions", tile_col:"#586793" },
+    { iconsrc: "/icons/telecom1.svg", title: "Telecom Services", tile_col:"#677991" },
+    { iconsrc: "/icons/camera-solution.svg", title: "Camera Solutions", tile_col:"#313E52"},
   ];
 
 const servicesData = [
@@ -68,7 +68,7 @@ const trustedPartners = [
       <section className="relative w-full h-screen overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 bg-[url(/herosec/hero1.jpg)] bg-cover bg-center" />
-        <div className="absolute inset-0 bg-linear-to-b from-[#0A509E]/80 to-[#243972]/40" />
+        <div className="absolute inset-0 bg-linear-to-b from-[#0A509E]/90 to-[#243972]/40" />
 
         {/* Content */}
         <div className="relative z-20 mx-auto lg:pl-30 h-full flex flex-col justify-center">
@@ -92,8 +92,12 @@ const trustedPartners = [
           <div className="w-auto lg:max-w-[80%] mx-8 lg:mx-auto px-0">
             <div className="grid grid-cols-1 md:grid-cols-4 h-[24vh]">
               {services.map((service, index) => (
-                <div key={index} className={`relative p-10 text-center transition hover:z-20 transform hover:border-2 hover:border-double hover:border-gray-400 hover:scale-103 hover:shadow-2xl hover:shadow-[#00bcd4]/40 ${ index === 0 ? "bg-[#19348B]/80" : "bg-[#19348B]/70 backdrop-blur-sm" }`}>
-                  <img src={service.iconsrc} alt={service.title} className="absolute top-6 left-10 w-12"/>
+                <div
+                  key={index}
+                  className={`group relative p-10 text-center transition opacity-90 hover:z-20 transform hover:border-2 hover:border-double hover:border-gray-400 hover:scale-105 hover:shadow-2xl hover:shadow-[#00bcd4]/40 duration-500`}
+                  style={{ backgroundColor: service.tile_col }}
+                >
+                  <img src={service.iconsrc} alt={service.title} className="absolute top-6 left-10 w-18 bg-slate-400 p-4 border border-white group-hover:shadow-white group-hover:shadow-md rounded-full transform duration-700" />
                   <div className="absolute bottom-12 w-full text-center text-2xl text-white font-normal">
                     {service.title}
                   </div>
@@ -320,7 +324,7 @@ const trustedPartners = [
             {trustedPartners.map((partner, index) => (
               <div
                 key={index}
-                className="group flex items-center justify-center p-6 backdrop-blur-sm hover:bg-white/70 hover:shadow-lg transition-all duration-300 hover:scale-110"
+                className="h-40 group flex items-center justify-center p-6 backdrop-blur-sm hover:bg-white/70 hover:shadow-lg transition-all duration-300 hover:scale-110"
               >
                 <img
                   src={partner.logo || "/placeholder.svg"}
