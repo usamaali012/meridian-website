@@ -27,7 +27,7 @@ export function Navbar() {
       <div className="lg:mx-28 pt-3">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-4 text-white font-bold text-2xl">
+          <Link href="/" className="flex items-center p-5 lg:p-0 space-x-4 text-white font-bold text-2xl">
             <Image
               src="/logo/meridian-logo-white.svg"
               height={140}
@@ -37,31 +37,31 @@ export function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center text-lg space-x-16 font-light">
-            <Link href="/" className="text-white px-3 py-2 rounded-md text-lg hover:bg-white/10 transition">
+          <div className="hidden md:flex items-center space-x-16 font-light">
+            <Link href="/" className="text-white px-3 py-2 border-b border-transparent hover:border-white text-[17px] hover:bg-white/20 transition duration-200">
               Home
             </Link>
             <Link
               href="/services"
-              className="text-white px-3 py-2 rounded-md text-lg hover:bg-white/10 transition"
+              className="text-white px-3 py-2 border-b border-transparent hover:border-white text-[17px] hover:bg-white/20 transition duration-200"
             >
               Service
             </Link>
             <Link
               href="/about"
-              className="text-white px-3 py-2 rounded-md text-lg hover:bg-white/10 transition"
+              className="text-white px-3 py-2 border-b border-transparent hover:border-white text-[17px] hover:bg-white/20 transition duration-200"
             >
               About
             </Link>
             <Link
               href="/contactus/"
-              className="text-white px-3 py-2 rounded-md text-lg hover:bg-white/10 transition"
+              className="text-white px-4 py-2 border-b border-transparent hover:border-white text-[17px] hover:bg-white/20 transition duration-200"
             >
               Contact us
             </Link>
             <Link
               href="/privacy-policy/"
-              className="text-white px-3 py-2 rounded-md text-lg hover:bg-white/10 transition"
+              className="text-white px-3 py-2 border-b border-transparent hover:border-white text-[17px] hover:bg-white/20 transition duration-200"
             >
               Privacy Policy
             </Link>
@@ -74,19 +74,15 @@ export function Navbar() {
             rel="noopener noreferrer"
             className="hidden md:block"
           >
-            <button className="px-10 py-2 backdrop-blur-xl text-white border-2 border-white rounded-full hover:bg-white hover:text-[#1e5a96] transition text-lg flex items-center gap-2 hover:scale-105 active:scale-95 duration-300">
+            <button className="px-8 py-2 backdrop-blur-xl text-white border-2 border-white rounded-full hover:bg-white hover:text-[#1e5a96] transition text-md flex items-center gap-2 hover:scale-105 active:scale-95 duration-300">
               <FaUser className="text-base" />
               User Log-in
             </button>
           </Link>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white p-2"
-            aria-label="Toggle menu"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-white pr-6">
+            <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>

@@ -6,9 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button"
-import {
-  ArrowRight,
-} from "lucide-react"
+import { ArrowRight,} from "lucide-react"
 
 export default function Home() {
 const services = [
@@ -76,11 +74,9 @@ const trustedPartners = [
             <h1 className="text-5xl md:text-6xl text-white mb-4 leading-tight">
               Driving <span className="text-[#00bcd4]">Growth</span>
               <br />
-              with Innovation in
-              <br />
-              Security Solutions
+              with Innovations
             </h1>
-            <p className="text-md text-white mb-8 max-w-xl">
+            <p className="text-lg text-white mb-8 max-w-xl">
               “Comprehensive digital systems solutions consultancy to drive your
               business forward in the modern world.”
             </p>
@@ -89,22 +85,67 @@ const trustedPartners = [
 
         {/* Hero Services */}
         <div className="z-20 absolute bottom-0 left-0 right-0">
-          <div className="w-auto lg:max-w-[80%] mx-8 lg:mx-auto px-0">
-            <div className="grid grid-cols-1 md:grid-cols-4 h-[24vh]">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className={`group relative p-10 text-center transition opacity-90 hover:z-20 transform hover:border-2 hover:border-double hover:border-gray-400 hover:scale-105 hover:shadow-2xl hover:shadow-[#00bcd4]/40 duration-500`}
-                  style={{ backgroundColor: service.tile_col }}
-                >
-                  <img src={service.iconsrc} alt={service.title} className="absolute top-6 left-10 w-15 bg-slate-400 p-3 border border-white group-hover:shadow-white group-hover:shadow-md rounded-full transform duration-700" />
-                  <div className="absolute bottom-12 w-full text-center text-2xl text-white font-normal">
-                    {service.title}
-                  </div>
-                </div>))}
-            </div>
+  <div className="w-auto lg:max-w-[80%] mx-8 lg:mx-auto px-0">
+    <div className="grid grid-cols-1 md:grid-cols-4 h-[20vh]">
+      {services.map((service, index) => (
+        <div
+          key={index}
+          style={{ backgroundColor: service.tile_col }}
+          className="
+            group relative p-10 text-center overflow-hidden
+            transition-all duration-500 ease-out
+            hover:scale-[1.07] hover:shadow-2xl 
+            hover:shadow-[#00bcd4]/40 hover:z-20
+            hover:border hover:border-white/20
+          "
+        >
+
+          {/* Hover sheen effect */}
+          <div
+            className="
+              absolute inset-0 opacity-0 
+              bg-linear-to-br from-white/10 to-transparent 
+              transition-opacity duration-500 
+              group-hover:opacity-30
+            "
+          ></div>
+
+          {/* Icon */}
+          <img
+            src={service.iconsrc}
+            alt={service.title}
+            className="
+              absolute top-6 left-10 w-12 
+              bg-white/20 backdrop-blur-sm p-2 
+              border border-white/40 
+              rounded-full shadow-md
+              transition-all duration-700
+              group-hover:shadow-xl 
+              group-hover:-translate-y-2
+              group-hover:rotate-3
+            "
+          />
+
+          {/* Title */}
+          <div
+            className="
+              absolute bottom-12 w-full text-center 
+              text-2xl text-white font-normal
+              transition-all duration-700
+              group-hover:-translate-y-1.5
+              group-hover:text-white
+              group-hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]
+            "
+          >
+            {service.title}
           </div>
+
         </div>
+      ))}
+    </div>
+  </div>
+</div>
+
       </section>
 
       {/*  Services */}
